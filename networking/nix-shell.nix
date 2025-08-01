@@ -6,6 +6,5 @@ pkgs.mkShell {
     nettools
     nmap
     dig
-    ftp
   ];
 }
