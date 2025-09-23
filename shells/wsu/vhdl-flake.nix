@@ -26,7 +26,7 @@
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            ghdl.packages.aarch64-linux.default
+            ghdl.packages.${pkgs.system}.default
             pkgs.gtkwave
           ];
           shellHook = '''';
